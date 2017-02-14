@@ -1,1 +1,1 @@
-Currently tested Textpattern plugins.
+Currently state of the ras_author_credits plugin.
