@@ -20,6 +20,25 @@
 *
 */
 
+/** register **/
+
+if (class_exists('\Textpattern\Tag\Registry')) {
+    Txp::get('\Textpattern\Tag\Registry')
+        ->register('ras_author_credits')
+        ->register('ras_email_text')
+        ->register('ras_authors')
+        ->register('ras_author_info')
+        ->register('ras_author_role')
+        ->register('ras_users')
+        ->register('ras_last_login')
+        ->register('ras_author_mailto')
+        ->register('ras_articlecount')
+        ->register('ras_imagecount')
+        ->register('ras_linkcount')
+        ->register('ras_filecount')
+        ->register('ras_assert_author');
+}
+
 	function ras_author_credits($atts, $thing = NULL) 
 	{
 	global $s, $thisauthor;
@@ -395,6 +414,7 @@
 	
 	return $thisauthor['email'];
 	}
+// -------------------------------------------------------------
 	function ras_filecount()
 	{
 	global $thisauthor;
