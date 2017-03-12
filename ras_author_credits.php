@@ -35,8 +35,7 @@ if (class_exists('\Textpattern\Tag\Registry')) {
         ->register('ras_articlecount')
         ->register('ras_imagecount')
         ->register('ras_linkcount')
-        ->register('ras_filecount')
-        ->register('ras_assert_author');
+        ->register('ras_filecount');
 }
 
 	function ras_author_credits($atts, $thing = NULL) 
